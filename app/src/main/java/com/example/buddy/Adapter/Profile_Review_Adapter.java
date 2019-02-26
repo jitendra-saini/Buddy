@@ -8,16 +8,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.example.buddy.Model.Images;
+import com.example.buddy.Model.Horizontal_recycler_view;
 import com.example.buddy.R;
 
 import java.util.ArrayList;
 
 public class Profile_Review_Adapter extends RecyclerView.Adapter<Profile_Review_Adapter.MyViewHolder> {
     Context context;
-    private ArrayList<Images> imagesArrayList=new ArrayList<>();
+    private ArrayList<Horizontal_recycler_view> imagesArrayList=new ArrayList<>();
 
-    public Profile_Review_Adapter(Context context, ArrayList<Images> imagesArrayList) {
+    public Profile_Review_Adapter(Context context, ArrayList<Horizontal_recycler_view> imagesArrayList) {
         this.context = context;
         this.imagesArrayList = imagesArrayList;
     }
@@ -33,7 +33,7 @@ public class Profile_Review_Adapter extends RecyclerView.Adapter<Profile_Review_
     @Override
     public void onBindViewHolder(@NonNull Profile_Review_Adapter.MyViewHolder myViewHolder, int i) {
 
-        myViewHolder.imageView.setImageResource(imagesArrayList.get(i).getImage());
+        myViewHolder.imageView.setImageResource(imagesArrayList.get(i).getImageUri());
 
 
     }

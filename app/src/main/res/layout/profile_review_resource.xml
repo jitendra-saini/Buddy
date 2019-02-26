@@ -60,7 +60,8 @@
 
             <RatingBar
                 android:id="@+id/ratinigbar"
-                style="@style/Widget.AppCompat.RatingBar"
+
+                style="@style/Widget.AppCompat.RatingBar.Small"
                 android:layout_width="128dp"
                 android:layout_height="match_parent" />
 
