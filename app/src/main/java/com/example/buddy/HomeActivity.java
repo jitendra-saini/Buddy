@@ -15,6 +15,8 @@ import com.example.buddy.Fragments.LibraryFragment;
 import com.example.buddy.Fragments.MapsFragment;
 import com.example.buddy.Fragments.ProfileFragment;
 
+import com.google.android.gms.location.LocationServices;
+
 public class HomeActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 
     ViewPager viewPager;
@@ -25,7 +27,6 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
 
 
 
